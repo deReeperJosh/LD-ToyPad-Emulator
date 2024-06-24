@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
-    "node-ld": "https://github.com/Berny23/node-ld.git",
+    "node-ld": "https://github.com/deReeperJosh/node-ld.git",
     "socket.io": "^4.7.5"
   },
   "devDependencies": {
