@@ -64,7 +64,7 @@ Allows you to connect an emulated Toy Pad to your PC or video-game console.
    echo "usb_f_rndis" | sudo tee -a /etc/modules
    
    git config pull.rebase false
-   git clone https://github.com/Berny23/LD-ToyPad-Emulator.git
+   git clone https://github.com/deReeperJosh/LD-ToyPad-Emulator.git
    cd LD-ToyPad-Emulator
    
    printf '\necho "usbip-vudc.0" > UDC\nusbipd -D --device\nsleep 2;\nusbip attach -r debian -b usbip-vudc.0\nchmod a+rw /dev/hidg0' >> usb_setup_script.sh
@@ -98,7 +98,7 @@ Allows you to connect an emulated Toy Pad to your PC or video-game console.
 
 #### Usage
 
-1. Start the virtual machine if it's not already running. Then start the **VirtualHere USB Client** and double click on `LEGO READER V2.10`.
+1. Start the virtual machine if it's not already running. Then start the **VirtualHere USB Client** and double click on `SKYLANDER PORTAL V0.1`.
 
 2. Run the emulator server with this command if you are in the correct folder (otherwise run `cd    LD-ToyPad-Emulator` first):
    ```bash
@@ -203,13 +203,13 @@ Vehicle IDs can be found [here](https://github.com/Berny23/LD-ToyPad-Emulator/bl
 
 Download and run [Zadig](https://zadig.akeo.ie).
 
-Click on `Options` and tick `List All Devices`. Select `LEGO READER V2.10` in the dropdown menu, then select `WinUSB` if it's not already selected, click on the `Replace Driver` button and on `Yes` in the dialog.
+Click on `Options` and tick `List All Devices`. Select `SKYLANDER PORTAL V0.1` in the dropdown menu, then select `WinUSB` if it's not already selected, click on the `Replace Driver` button and on `Yes` in the dialog.
 
 After the installation has finished, exit Zadig and restart RPCS3. If you get stuck on the main menu, just close the game, right-click on it in the RPCS3 games list, select `Change Custom Configuration`, switch to the `Network` tab and choose `Disconnected` in both drop-down menus. The game will now correctly detect the Toy Pad.
 
 To undo the changes from Zadig, you have to rollback the driver:
 1. Open `Device Manager`, scroll down to `USB devices` and expand the section.
-2. Double-click `LEGO READER V2.10`.
+2. Double-click `SKYLANDER PORTAL V0.1`.
 3. Switch to the `Driver` tab, click `Previous Driver`, select the first option and click yes.
 
 **Solution for Linux systems**
@@ -231,7 +231,7 @@ Either close any other software that is using the port 80 or manually edit the l
 
 If you did this, you may need to append your selected port to the address in the browser (like `http://debian:500` or `http://192.168.0.165:500` if your port is 500).
 
-### VirtualHere USB Client doesn't show LEGO READER V2.10
+### VirtualHere USB Client doesn't show SKYLANDER PORTAL V0.1
 When installing the virtual machine, you have to set the hostname to `debian`.
 
 Alternatively, copy the following command and replace `YOUR_IP_ADDRESS` with your virtual machine's IP address (it looks like `192.168.X.X`, run `hostname -I` to show it). After you've done this, run the modified command while you're inside the `LD-ToyPad-Emulator` folder.
@@ -239,8 +239,8 @@ Alternatively, copy the following command and replace `YOUR_IP_ADDRESS` with you
 git reset --hard ; printf '\necho "usbip-vudc.0" > UDC\nusbipd -D --device\nsleep 2;\nusbip attach -r YOUR_IP_ADDRESS -b usbip-vudc.0\nchmod a+rw /dev/hidg0' >> usb_setup_script.sh ; sudo cp usb_setup_script.sh /usr/local/bin/toypad_usb_setup.sh
 ````
 
-### VirtualHere shows LEGO READER V2.10, but fails with "Operation not permitted"
-When double clicking on "LEGO READER V2.10", if it returns `Error "Operation not permitted" (-1) trying to use this device.`. Try these steps:
+### VirtualHere shows SKYLANDER PORTAL V0.1, but fails with "Operation not permitted"
+When double clicking on "SKYLANDER PORTAL V0.1", if it returns `Error "Operation not permitted" (-1) trying to use this device.`. Try these steps:
 
 1. Right click the device in the VirtualHere Client and select "Custom Event Handler..."
 2. Add `onReset.$VENDOR_ID$.$PRODUCT_ID$=` 

@@ -2,12 +2,12 @@
   "name": "ld-toypad-emulator",
   "version": "1.4.1",
   "description": "Toy Pad Emulator for Lego Dimensions",
-  "repository": "https://github.com/Berny23/LD-ToyPad-Emulator",
+  "repository": "https://github.com/deReeperJosh/LD-ToyPad-Emulator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Berny23",
+  "author": "deReeperJosh",
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",

@@ -1,5 +1,5 @@
 /*
-	Copyright © 2023 Berny23, Cort1237 and many more
+	Copyright © 2024 deReeperJosh Berny23, Cort1237 and many more
 	
 	This file is part of "Toy Pad Emulator for Lego Dimensions" which is released under the "MIT" license.
 	See file "LICENSE" or go to "https://choosealicense.com/licenses/mit" for full license details.
