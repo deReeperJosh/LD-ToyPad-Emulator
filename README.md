@@ -53,7 +53,7 @@ Allows you to connect an emulated Toy Pad to your PC or video-game console.
 4. Run the following commands (you can copy and paste with right click):
    ```bash
    sudo apt update
-   sudo apt install -y git usbip hwdata curl python build-essential libusb-1.0-0-dev libudev-dev
+   sudo apt install -y git usbip hwdata curl python-is-python3 build-essential libusb-1.0-0-dev libudev-dev
    echo "usbip-core" | sudo tee -a /etc/modules
    echo "usbip-vudc" | sudo tee -a /etc/modules
    echo "vhci-hcd" | sudo tee -a /etc/modules
